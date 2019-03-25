@@ -1,0 +1,25 @@
+﻿@{
+    ViewBag.Title = "Home";
+}
+<h2>
+    Student
+</h2>
+<hr />
+<div ng-controller="MyCntrl">
+    <table style="width: 40%">
+        <tr>
+            <th>Student ID</th>
+            <th>Name</th>
+            <th>SurName</th>
+            <th>Address</th>
+            <th>Mobile</th>
+        </tr>
+        <tr ng-repeat="s in Student">
+            <td>{{s.StudentID}}</td>
+            <td>{{s.Name}}</td>
+            <td>{{s.Surname}}</td>
+            <td>{{s.Address}}</td>
+            <td>{{s.Mobile}}</td>
+        </tr>
+    </table>
+</div>
